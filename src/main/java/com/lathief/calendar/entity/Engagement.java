@@ -31,23 +31,19 @@ public class Engagement extends BaseEntity {
     private Schedule schedule;
     @Enumerated(EnumType.STRING)
     private RequestStatus requestStatus;
-
     public Engagement(User user, Schedule schedule) {
         this.user = user;
         this.schedule = schedule;
     }
-
     public Event getEvent() {
         return schedule.toEvent();
     }
     public boolean isOverlapped(LocalDate date) {
         return this.schedule.isOverlapped(date);
     }
-
     public boolean isOverlapped(Period period) {
         return this.schedule.isOverlapped(period);
     }
-
     public Engagement reply(RequestReplyType type) {
         switch (type) {
             case ACCEPT -> this.requestStatus = RequestStatus.ACCEPTED;

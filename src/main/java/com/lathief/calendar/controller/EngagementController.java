@@ -2,8 +2,6 @@ package com.lathief.calendar.controller;
 
 import com.lathief.calendar.entity.Engagement;
 import com.lathief.calendar.enums.RequestReplyType;
-import com.lathief.calendar.payload.request.EventRequest;
-import com.lathief.calendar.repository.EngagementRepository;
 import com.lathief.calendar.service.EngagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

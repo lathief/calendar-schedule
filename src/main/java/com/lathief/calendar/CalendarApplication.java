@@ -18,11 +18,9 @@ import java.util.List;
 public class CalendarApplication implements ApplicationRunner {
 	@Autowired
 	UserRepository userRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(CalendarApplication.class, args);
 	}
-
 	@Override
 	@Transactional
 	public void run(ApplicationArguments args) throws Exception {

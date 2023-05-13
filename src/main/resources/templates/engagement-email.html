@@ -48,13 +48,15 @@
                             <div class="col-lge" style="display:inline-block;width:100%;max-width:395px;vertical-align:top;padding-bottom:20px;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636;">
                                 <p style="margin-top:0;margin-bottom:12px;" th:text="${title}"></p>
                                 <p style="margin-top:0;margin-bottom:12px;" th:text="${description}"></p>
-                                <p style="margin:0;">
-                                    <a th:href="${acceptUrl}" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><span style="mso-text-raise:10pt;font-weight:bold;">Claim yours now</span></a>
-                                </p>
-                                <br/>
-                                <p>
-                                <a th:href="${rejectUrl}" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><span style="mso-text-raise:10pt;font-weight:bold;">Claim yours now</span></a>
-                                </p>
+                                <p style="margin-top:0;margin-bottom:12px;">Will you be attending the event?</p>
+                                <ul>
+                                    <p style="display: inline;">
+                                        <a th:href="${acceptUrl}" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><span style="mso-text-raise:10pt;font-weight:bold;">Accept</span></a>
+                                    </p>
+                                    <p style="display: inline;">
+                                        <a th:href="${rejectUrl}" style="background: #ff3884; text-decoration: none; padding: 10px 25px; color: #ffffff; border-radius: 4px; display:inline-block; mso-padding-alt:0;text-underline-color:#ff3884"><span style="mso-text-raise:10pt;font-weight:bold;">Reject</span></a>
+                                    </p>
+                                </ul>
                             </div>
                         </td>
                     </tr>

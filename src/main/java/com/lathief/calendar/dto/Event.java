@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 @Getter
 public class Event {
     private Schedule schedule;
-    protected Event() {}
     public Event(Schedule schedule) {
         this.schedule = schedule;
     }

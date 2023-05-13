@@ -26,7 +26,6 @@ public class User extends BaseEntity {
     private LocalDate birthday;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-
     public User(String username, String email, String password, LocalDate birthday, Gender gender) {
         this.username = username;
         this.email = email;

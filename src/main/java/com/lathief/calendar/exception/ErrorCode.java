@@ -10,9 +10,7 @@ public enum ErrorCode {
     VALIDATION_FAIL("The value is not valid"),
     BAD_REQUEST("Wrong Access"),
     EVENT_CREATE_OVERLAPPED_PERIOD("Overlapping event period");
-
     private final String message;
-
     ErrorCode(String message) {
         this.message = message;
     }
